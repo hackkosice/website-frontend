@@ -62,6 +62,21 @@ Examples include:
     feature/1-repository-init
     fix/30-mobile-logo-not-visible
 
+### Pull requests
+
+As in features and fixes, we want PRs to hold information about their type and associated task. Therefore, standard template for naming pull requests is:
+
+    #[ID] - [TITLE]
+
+where each part means:
+
+- **ID**: ID from Monday.com, as explained above
+- **TITLE**: Title of task from Monday.com
+
+PR is then marked with either `feature` or `fix` label, according to task type.
+
+Descriptions can stay empty. Fill it only with some useful information - concerns, special steps for testing, requests to review something specific in more depth, etc.
+
 ### Tags
 
 After each release, we mark it with a tag. Tag has the following pattern:
