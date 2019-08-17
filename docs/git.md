@@ -75,7 +75,9 @@ where each part means:
 
 PR is then marked with either `feature` or `fix` label, according to task type.
 
-Descriptions can stay empty. Fill it only with some useful information - concerns, special steps for testing, requests to review something specific in more depth, etc.
+Description **must** contain link to Monday.com task. Otherwise, it can stay empty. Fill it only with some useful information - concerns, special steps for testing, requests to review something specific in more depth, etc.
+
+> **NOTE:** Once you submit pull request, post its link to Monday.com task as well.
 
 ### Tags
 
