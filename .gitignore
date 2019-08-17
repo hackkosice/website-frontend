@@ -1,3 +1,6 @@
+.DS_Store
+/dist
+
 # Logs
 logs
 *.log
@@ -56,9 +59,19 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.*.local
 
 # next.js build output
 .next
 
-# Sublime text
+# Editor directories and files
 *.sublime-*
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
