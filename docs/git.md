@@ -59,8 +59,8 @@ where each part means:
 
 Examples include:
 
-    feature/1-repository-init
-    fix/30-mobile-logo-not-visible
+    feature/299881567-repository-init
+    fix/299887094-mobile-logo-not-visible
 
 ### Pull requests
 
