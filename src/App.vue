@@ -7,15 +7,21 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+-->
+  <SiteFooter />
   </div>
+
 </template>
 
 <script>
 
   import NavBar from "@/organisms/NavBar.vue";
+  import SiteFooter from "@/organisms/SiteFooter.vue";
+
   export default {
     components: {
       NavBar,
+      SiteFooter,
     }
   };
 
