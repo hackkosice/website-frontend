@@ -36,19 +36,24 @@
             exact: true,
           },
           {
+            route: '/faq',
+            name: 'FAQ',
+          },
+          {
             route: '/about',
             name: 'About Us',
           },
-        ]
+          {
+            route: '/2019',
+            name: 'HK 2019',
+          },
+          {
+            route: '/contact-us',
+            name: 'Contact us',
+          },
+        ],
       };
     },
   };
 
 </script>
-
-<style lang="scss" scoped>
-  nav.navbar .nav-item.nav-link {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-</style>
