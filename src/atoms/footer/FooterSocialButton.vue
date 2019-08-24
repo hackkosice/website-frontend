@@ -9,7 +9,7 @@ export default {
   name: "FooterSocialButton",
   props: {
     icon: {
-      type: String,
+      type: [String, Array],
       required: true
     },
     link: {
