@@ -1,10 +1,23 @@
 <template>
-  <button v-if="isButton" @click.prevent="perform" type="button" :class="buttonClass"><slot /></button>
-  <a v-else :href="link" @click.prevent="redirect" :class="buttonClass" :style="buttonStyle"><slot /></a>
+  <button
+    v-if="isButton"
+    @click.prevent="perform"
+    type="button"
+    :class="buttonClass"
+  >
+    <slot />
+  </button>
+  <a
+    v-else
+    :href="link"
+    @click.prevent="redirect"
+    :class="buttonClass"
+    :style="buttonStyle"
+    ><slot
+  /></a>
 </template>
 
 <script>
-
 export default {
   name: "PrimaryButton",
 
@@ -47,40 +60,36 @@ export default {
     fontSize: {
       type: Number,
       default: 1
-    },
+    }
   },
 
   computed: {
-    isButton: function () {
+    isButton: function() {
       return !!this.action;
     },
 
-    buttonClass: function () {
-      return [
-        'btn',
-        `btn-${this.type}`,
-        this.block ? 'btn-block' : ''
-      ];
+    buttonClass: function() {
+      return ["btn", `btn-${this.type}`, this.block ? "btn-block" : ""];
     },
 
-    buttonStyle: function () {
+    buttonStyle: function() {
       return {
-        'font-size': `${this.fontSize}rem`
-      }
+        "font-size": `${this.fontSize}rem`
+      };
     },
 
-    btnType: function () {
+    btnType: function() {
       const outlined = this.outlined ? "outline-" : "";
       return `btn-${outlined}${this.type}`;
     }
   },
 
   methods: {
-    perform: function () {
+    perform: function() {
       this.action();
     },
 
-    redirect: function () {
+    redirect: function() {
       if (this.external) {
         window.open(this.link, this.target);
       } else {
@@ -89,12 +98,11 @@ export default {
     }
   }
 };
-
 </script>
 
 <style lang="scss" scoped>
-  .btn {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 </style>
