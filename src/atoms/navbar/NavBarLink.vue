@@ -42,7 +42,7 @@ export default {
   methods: {
     navigateRoute(event, callback) {
       callback(event);
-      if (!!this.onNavigate) {
+      if (this.onNavigate) {
         this.onNavigate();
       }
     }

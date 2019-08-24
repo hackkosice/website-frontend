@@ -3,10 +3,7 @@
     <div class="container">
       <NavBarBrand />
 
-      <button
-        class="navbar-toggler"
-        type="button"
-      >
+      <button class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon" @click.prevent="toggle"></span>
       </button>
       <div class="navbar-collapse collapse" :class="toggleClass">
@@ -68,9 +65,9 @@ export default {
   },
 
   computed: {
-    toggleClass: function () {
+    toggleClass: function() {
       return this.shown ? "show" : "";
-    },
+    }
   },
 
   methods: {
