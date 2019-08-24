@@ -30,17 +30,18 @@ nav.navbar {
 		}
 	}
 
-	.nav-item.nav-link:hover {
-		color: $primary;
-	}
-
 	.nav-item.nav-link.active {
 		color: $primary;
 	}
 
 	@include media-breakpoint-up(lg) {
 		.nav-item.nav-link.active {
+			color: white;
 			border-bottom: 1px solid $primary;
 		}
+	}
+
+	.nav-item.nav-link:hover {
+		color: $primary;
 	}
 }
