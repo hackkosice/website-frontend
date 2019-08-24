@@ -1,2 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap&subset=latin-ext');
+@import "_vars";
 @import "_theme";
+@import "_navbar";
 @import "~bootstrap/scss/bootstrap";
+
+.app-content {
+	background: #fcfcfc;
+	// Has to be manually calculated.
+	// First value is height of the window.
+	// Second is height of the navbar.
+	// Third is height of footer
+	min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+}
+
+.footer-content {
+	padding: 2rem;
+}

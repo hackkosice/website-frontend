@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////////
+////////////////// MAIN TOP NAVIGATION BAR //////////////////
+/////////////////////////////////////////////////////////////
+
+nav.navbar .nav-item.nav-link {
+	color: white;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+nav.navbar .nav-item.nav-link:hover {
+	color: $primary;
+}
+
+nav.navbar .nav-item.nav-link.active {
+	border-bottom: 1px solid $primary;
+}
