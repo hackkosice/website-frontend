@@ -6,7 +6,7 @@
         >We are sorry, but the page you are looking for does not exist
         :(</SubPageHeading
       >
-      <div class="text-center mt-5">
+      <div class="text-center mt-5 pb-5">
         <HKButton link="/" :fontSize="1.25">Go home</HKButton>
       </div>
     </div>

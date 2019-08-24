@@ -85,11 +85,11 @@ export default {
   },
 
   methods: {
-    perform: function() {
+    perform() {
       this.action();
     },
 
-    redirect: function() {
+    redirect() {
       if (this.external) {
         window.open(this.link, this.target);
       } else {

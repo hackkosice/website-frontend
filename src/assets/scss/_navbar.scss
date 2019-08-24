@@ -2,21 +2,45 @@
 ////////////////// MAIN TOP NAVIGATION BAR //////////////////
 /////////////////////////////////////////////////////////////
 
-nav.navbar .nav-item.nav-link {
-	color: white;
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
+nav.navbar {
 
-nav.navbar .nav-item.nav-link:hover {
-	color: $primary;
-}
+	@media (max-width: 375px) {
+		.navbar-brand {
+			margin-right: 0;
+		}
+		.navbar-brand img {
+			height: 35px !important;
+		}
+	}
 
-nav.navbar .nav-item.nav-link.active {
-	border-bottom: 1px solid $primary;
+	.nav-item.nav-link {
+		color: white;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		.nav-item.nav-link {
+			font-size: 1rem;
+		}
+	}
+
+	.nav-item.nav-link:hover {
+		color: $primary;
+	}
+
+	.nav-item.nav-link.active {
+		color: $primary;
+	}
+
+	@include media-breakpoint-up(lg) {
+		.nav-item.nav-link.active {
+			border-bottom: 1px solid $primary;
+		}
+	}
 }

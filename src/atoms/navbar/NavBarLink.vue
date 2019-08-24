@@ -7,7 +7,7 @@
       class="nav-item nav-link"
       :class="{ active: exact ? isExactActive : isActive }"
       :href="href"
-      @click="navigate"
+      @click="navigateRoute($event, navigate)"
       >{{ name }}</a
     >
   </router-link>
@@ -16,7 +16,36 @@
 <script>
 export default {
   name: "NavBarLink",
-  // TODO: validation rules
-  props: ["route", "name", "exact"]
+
+  props: {
+    route: {
+      type: [String, Object],
+      required: true
+    },
+
+    name: {
+      type: String,
+      required: true
+    },
+
+    exact: {
+      type: Boolean,
+      default: false
+    },
+
+    onNavigate: {
+      type: Function,
+      default: null
+    }
+  },
+
+  methods: {
+    navigateRoute(event, callback) {
+      callback(event);
+      if (this.onNavigate) {
+        this.onNavigate();
+      }
+    }
+  }
 };
 </script>

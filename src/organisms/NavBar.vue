@@ -3,18 +3,10 @@
     <div class="container">
       <NavBarBrand />
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon" @click.prevent="toggle"></span>
       </button>
-      <div class="navbar-collapse collapse show">
+      <div class="navbar-collapse collapse" :class="toggleClass">
         <div class="mr-auto"></div>
         <div class="navbar-nav justify-content-right">
           <NavBarLink
@@ -22,6 +14,7 @@
             :name="item.name"
             :route="item.route"
             :exact="item.exact"
+            :onNavigate="hide"
             :key="index"
           ></NavBarLink>
         </div>
@@ -36,12 +29,15 @@ import NavBarLink from "@/atoms/navbar/NavBarLink.vue";
 
 export default {
   name: "NavBar",
+
   components: {
     NavBarBrand,
     NavBarLink
   },
+
   data: function() {
     return {
+      shown: false,
       menu: [
         {
           route: "/",
@@ -66,6 +62,22 @@ export default {
         }
       ]
     };
+  },
+
+  computed: {
+    toggleClass: function() {
+      return this.shown ? "show" : "";
+    }
+  },
+
+  methods: {
+    toggle() {
+      this.shown = !this.shown;
+    },
+
+    hide() {
+      this.shown = false;
+    }
   }
 };
 </script>
