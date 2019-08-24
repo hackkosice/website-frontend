@@ -8,9 +8,7 @@
     </div>
     <router-view />
 -->
-    <div class="app-content">
-      <router-view class="container" />
-    </div>
+    <router-view class="app-content" />
     <SiteFooter />
   </div>
 
