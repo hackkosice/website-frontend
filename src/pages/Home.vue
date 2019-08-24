@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 import WelcomeSection from "@/organisms/home/WelcomeSection.vue";
 import WhatIsHK from "@/organisms/home/WhatIsHK.vue";
 import PreRegistration from "@/organisms/home/PreRegistration.vue";
@@ -23,7 +22,7 @@ export default {
     WhatIsHK,
     PreRegistration,
     SponsorsPartners,
-    Venue,
-  },
+    Venue
+  }
 };
 </script>
