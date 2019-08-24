@@ -8,8 +8,8 @@ This is version `0.1.0`, released on 2019-08-17. Please refer to [changelog](CHA
 
 ## Contributors
 
-- @matusmak
-- @dmatis2
+- [MatusMak](https://github.com/MatusMak)
+- [dmatis2](https://github.com/dmatis2)
 
 ## Setup
 
