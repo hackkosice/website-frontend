@@ -1,24 +1,36 @@
 <template>
   <footer class="bg-secondary text-light">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">a</div>
-        <div class="col-md-4">b</div>
-        <div class="col-md-4">c</div>
+      <div class="footer-content row">
+        <div class="col-md-4">
+          <FooterSocial />
+        </div>
+        <div class="col-md-4">
+          <FooterContact />
+        </div>
+        <div class="col-md-4">
+          <FooterPolicies />
+        </div>
       </div>
-      <Copyright />
+      <FooterCopyright />
     </div>
   </footer>
 </template>
 
 <script>
 
-  import Copyright from "@/molecules/Copyright.vue";
+  import FooterSocial from "@/molecules/FooterSocial.vue";
+  import FooterContact from "@/molecules/FooterContact.vue";
+  import FooterCopyright from "@/molecules/FooterCopyright.vue";
+  import FooterPolicies from "@/molecules/FooterPolicies.vue";
 
   export default {
     name: 'SiteFooter',
     components: {
-      Copyright
+      FooterSocial,
+      FooterContact,
+      FooterCopyright,
+      FooterPolicies,
     },
   };
 

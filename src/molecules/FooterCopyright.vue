@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row text-center">
     <div class="col-12">
       <span class="copyright text-white-50">&copy; {{ year }} Hack Kosice</span>
     </div>
@@ -9,7 +9,7 @@
 <script>
 
   export default {
-    name: "Copyright",
+    name: "FooterCopyright",
     computed: {
       year: function () {
         return new Date().getFullYear();
