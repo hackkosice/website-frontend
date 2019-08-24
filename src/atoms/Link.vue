@@ -19,7 +19,7 @@ export default {
 
   props: {
     link: {
-      type: String,
+      type: [String, Object],
       required: true
     },
 
