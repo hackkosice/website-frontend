@@ -11,20 +11,16 @@
     <router-view class="app-content" />
     <SiteFooter />
   </div>
-
 </template>
 
 <script>
+import NavBar from "@/organisms/NavBar.vue";
+import SiteFooter from "@/organisms/SiteFooter.vue";
 
-  import NavBar from "@/organisms/NavBar.vue";
-  import SiteFooter from "@/organisms/SiteFooter.vue";
-
-  export default {
-    components: {
-      NavBar,
-      SiteFooter,
-    }
-  };
-
+export default {
+  components: {
+    NavBar,
+    SiteFooter
+  }
+};
 </script>
-

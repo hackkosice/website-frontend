@@ -18,20 +18,18 @@
 </template>
 
 <script>
+import FooterSocial from "@/molecules/footer/FooterSocial.vue";
+import FooterContact from "@/molecules/footer/FooterContact.vue";
+import FooterCopyright from "@/molecules/footer/FooterCopyright.vue";
+import FooterPolicies from "@/molecules/footer/FooterPolicies.vue";
 
-  import FooterSocial from "@/molecules/FooterSocial.vue";
-  import FooterContact from "@/molecules/FooterContact.vue";
-  import FooterCopyright from "@/molecules/FooterCopyright.vue";
-  import FooterPolicies from "@/molecules/FooterPolicies.vue";
-
-  export default {
-    name: 'SiteFooter',
-    components: {
-      FooterSocial,
-      FooterContact,
-      FooterCopyright,
-      FooterPolicies,
-    },
-  };
-
+export default {
+  name: "SiteFooter",
+  components: {
+    FooterSocial,
+    FooterContact,
+    FooterCopyright,
+    FooterPolicies
+  }
+};
 </script>
