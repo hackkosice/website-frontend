@@ -63,7 +63,7 @@ nav.navbar {
 	right: 20px;
 	margin-top: -10px;
 	
-	@include media-breakpoint-up(lg) {
+	@media screen and (min-width: 1350px) {
 		margin-top: -40px;
 	}
 
