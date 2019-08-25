@@ -61,6 +61,7 @@ nav.navbar {
 	position: sticky;
 	width: 10%;
 	right: 20px;
+	margin-top: -10px;
 	
 	@include media-breakpoint-up(lg) {
 		margin-top: -40px;
