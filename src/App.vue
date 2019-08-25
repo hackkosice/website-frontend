@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
+    <MlhBadge />
     <!--
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -16,11 +17,13 @@
 <script>
 import NavBar from "@/organisms/NavBar.vue";
 import SiteFooter from "@/organisms/SiteFooter.vue";
+import MlhBadge from "@/atoms/navbar/MlhBadge.vue";
 
 export default {
   components: {
     NavBar,
-    SiteFooter
+    SiteFooter,
+    MlhBadge
   }
 };
 </script>

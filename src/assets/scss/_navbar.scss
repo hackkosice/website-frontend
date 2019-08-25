@@ -45,3 +45,24 @@ nav.navbar {
 		color: $primary;
 	}
 }
+
+.mlh-badge {
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	z-index: 10000;
+}
+
+#mlh-trust-badge {
+	display: block;
+	max-width: 100px;
+	min-width: 60px;
+	position: sticky;
+	width: 10%;
+	right: 20px;
+	
+	@include media-breakpoint-up(lg) {
+		margin-top: -40px;
+	}
+}
