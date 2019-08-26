@@ -14,7 +14,7 @@ import "./assets/scss/styles.scss";
 library.add(fas, fab, far);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = process.env.VUE_APP_DEBUG;
 
 new Vue({
   router,

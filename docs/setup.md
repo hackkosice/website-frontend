@@ -1,5 +1,9 @@
 # Setup of application
 
+## Environment setup
+
+Please copy contents of `.env.example` to `.env` file and fill all settings according to your current environment.
+
 ## Project setup
 ```
 npm install
