@@ -3,9 +3,10 @@
 @import "_theme";
 @import "~bootstrap/scss/bootstrap";
 @import "_navbar";
+@import "_sponsors";
 
 .app-content {
-	background: #fcfcfc;
+	background: white;
 	// Has to be manually calculated.
 	// First value is height of the window.
 	// Second is height of the navbar.
