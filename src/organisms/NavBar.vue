@@ -1,5 +1,7 @@
 <template>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
+  <nav
+    class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary shadow"
+  >
     <div class="container">
       <NavBarBrand />
 

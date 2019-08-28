@@ -1,0 +1,106 @@
+.sponsors-group {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include media-breakpoint-up(lg) {
+		max-width: 70%;
+	}
+}
+
+.sponsor {
+
+	.sponsor-logo {
+		transition: 0.3s;
+	}
+
+	.sponsor-logo:hover {
+		transform: scale(1.2);
+	}
+
+
+
+	.sponsor-logo-big-square {
+		max-width: $sponsorBig;
+		max-height: $sponsorBig;
+	}
+
+	.sponsor-logo-big-wide {
+		max-width: $sponsorBig;
+		height: auto;
+	}
+
+	.sponsor-logo-big-high {
+		width: auto;
+		max-height: $sponsorBig;
+	}
+
+
+
+	.sponsor-logo-medium-big-square {
+		max-width: $sponsorMediumBig;
+		max-height: $sponsorMediumBig;
+	}
+
+	.sponsor-logo-medium-big-wide {
+		max-width: $sponsorMediumBig;
+		height: auto;
+	}
+
+	.sponsor-logo-medium-big-high {
+		width: auto;
+		max-height: $sponsorMediumBig;
+	}
+
+
+
+	.sponsor-logo-medium-square {
+		max-width: $sponsorMedium;
+		max-height: $sponsorMedium;
+	}
+
+	.sponsor-logo-medium-wide {
+		max-width: $sponsorMedium;
+		height: auto;
+	}
+
+	.sponsor-logo-medium-high {
+		width: auto;
+		max-height: $sponsorMedium;
+	}
+
+
+
+	.sponsor-logo-small-square {
+		max-width: $sponsorSmall;
+		max-height: $sponsorSmall;
+	}
+
+	.sponsor-logo-small-wide {
+		max-width: $sponsorSmall;
+		height: auto;
+	}
+
+	.sponsor-logo-small-high {
+		width: auto;
+		max-height: $sponsorSmall;
+	}
+
+
+
+	.sponsor-placeholder {
+		color: rgba(0, 0, 0, 0.8);
+		padding: 30px 10px;
+		border: 2px dashed rgba(0, 0, 0, 0.85);
+		display: inline-block;
+		border-radius: 10px;
+		font-size: 1.3rem;
+		margin: 10px;
+		transition: 0.3s;
+	}
+
+	.sponsor-placeholder:hover {
+		transform: scale(1.2);
+		background: rgb(0, 0, 0, 0.05);
+	}
+}
