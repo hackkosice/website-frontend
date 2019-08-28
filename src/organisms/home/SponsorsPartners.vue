@@ -88,7 +88,7 @@ export default {
               style: "high"
             }
           ],
-          placeholders: false
+          placeholders: 1
         }
       ],
 
@@ -101,7 +101,8 @@ export default {
         gold: {
           title: "Gold sponsors",
           style: "big",
-          perRow: 2
+          perRow: 2,
+          perRowResponsive: 1
         },
         silver: {
           title: "Silver sponsors",
@@ -111,7 +112,8 @@ export default {
         bronze: {
           title: "Bronze sponsors",
           style: "small",
-          perRow: 4
+          perRow: 4,
+          perRowResponsive: 2
         },
         general: {
           title: "General partner",
@@ -121,7 +123,8 @@ export default {
         partners: {
           title: "Partners",
           style: "small",
-          perRow: 3
+          perRow: 4,
+          perRowResponsive: 2
         }
       }
     };

@@ -47,8 +47,14 @@ export default {
     },
 
     columnClass: function() {
-      const width = 12 / this.config.perRow;
-      return `col-${width}`;
+      if (this.config.perRowResponsive) {
+        const widthDesktop = 12 / this.config.perRow;
+        const widthMobile = 12 / this.config.perRowResponsive;
+        return `col-${widthMobile} col-md-${widthDesktop}`;
+      } else {
+        const width = 12 / this.config.perRow;
+        return `col-${width}`;
+      }
     }
   },
 
