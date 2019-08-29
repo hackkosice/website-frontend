@@ -7,7 +7,7 @@
         :(</SubPageHeading
       >
       <div class="text-center mt-5 pb-5">
-        <HKButton link="/" :fontSize="1.25">Go home</HKButton>
+        <HKButton link="/" :fontSize="1.25" :large="true">Go home</HKButton>
       </div>
     </div>
   </div>

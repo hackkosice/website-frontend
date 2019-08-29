@@ -4,6 +4,7 @@
     @click.prevent="perform"
     type="button"
     :class="buttonClass"
+    :style="buttonStyle"
   >
     <slot />
   </button>
@@ -13,8 +14,9 @@
     @click.prevent="redirect"
     :class="buttonClass"
     :style="buttonStyle"
-    ><slot
-  /></a>
+    >
+    <slot />
+  </a>
 </template>
 
 <script>
@@ -52,6 +54,11 @@ export default {
       default: false
     },
 
+    large: {
+      type: Boolean,
+      default: false
+    },
+
     block: {
       type: Boolean,
       default: false
@@ -69,7 +76,13 @@ export default {
     },
 
     buttonClass: function() {
-      return ["btn", `btn-${this.type}`, this.block ? "btn-block" : ""];
+      return [
+        "btn",
+        "btn-hk",
+        `btn-${this.type}`,
+        this.block ? "btn-block" : "",
+        this.large ? "btn-lg" : ""
+      ];
     },
 
     buttonStyle: function() {
