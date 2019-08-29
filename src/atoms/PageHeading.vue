@@ -1,7 +1,7 @@
 <template>
   <h1
-    :class="displayClass"
-    class="text-primary text-center font-weight-bold p-4"
+    :class="headingClass"
+    class="text-center font-weight-bold p-4"
   >
     <slot />
   </h1>
@@ -14,11 +14,16 @@ export default {
     display: {
       type: Number,
       default: 3
+    },
+
+    color: {
+      type: String,
+      default: 'primary'
     }
   },
   computed: {
-    displayClass: function() {
-      return `display-${this.display}`;
+    headingClass: function() {
+      return `text-${this.color} display-${this.display}`;
     }
   }
 };

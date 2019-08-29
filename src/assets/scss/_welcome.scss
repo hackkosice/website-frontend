@@ -1,0 +1,6 @@
+.welcome {
+	// Has to be manually calculated.
+	// First value is height of the window.
+	// Second is height of the navbar.
+	min-height: calc(100vh - #{$headerHeight});
+}
