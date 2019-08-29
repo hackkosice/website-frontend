@@ -14,7 +14,7 @@
     @click.prevent="redirect"
     :class="buttonClass"
     :style="buttonStyle"
-    >
+  >
     <slot />
   </a>
 </template>

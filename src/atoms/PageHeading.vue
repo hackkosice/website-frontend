@@ -1,8 +1,5 @@
 <template>
-  <h1
-    :class="headingClass"
-    class="text-center font-weight-bold p-4"
-  >
+  <h1 :class="headingClass" class="text-center font-weight-bold p-4">
     <slot />
   </h1>
 </template>
@@ -18,7 +15,7 @@ export default {
 
     color: {
       type: String,
-      default: 'primary'
+      default: "primary"
     }
   },
   computed: {
