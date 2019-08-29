@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-4">
     <img
       src="@/assets/imgs/logo_box_small_transparent.png"
       class="d-inline-block align-top img-fluid pl-5 pr-5"
