@@ -9,7 +9,7 @@
     </div>
     <router-view />
 -->
-    <router-view class="app-content" />
+    <router-view id="app-content" class="app-content" />
     <SiteFooter />
   </div>
 </template>

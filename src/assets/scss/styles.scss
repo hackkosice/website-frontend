@@ -3,6 +3,7 @@
 @import "_theme";
 @import "~bootstrap/scss/bootstrap";
 @import "_navbar";
+@import "_welcome";
 @import "_sponsors";
 
 .app-content {
@@ -12,6 +13,28 @@
 	// Second is height of the navbar.
 	// Third is height of footer
 	min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+}
+
+.main-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3rem;
+	width: 100%;
+
+	@include media-breakpoint-up(sm) {
+		width: 75%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: 50%;
+	}
+}
+
+.btn-hk {
+	&.btn-lg {
+		padding: 1rem 2rem;
+	}
 }
 
 .footer-content {
