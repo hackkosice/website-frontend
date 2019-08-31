@@ -1,17 +1,3 @@
-<style lang="scss" scoped>
-#what-is-hk-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(~@/assets/imgs/what_is_hk_background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-
-  .container {
-    padding: 2rem 0;
-  }
-}
-</style>
-
 <template>
   <div id="what-is-hk-background">
     <div class="container">
@@ -31,11 +17,7 @@
       </SubPageHeading>
       <SubPageHeading>Let’s double the fun in 2020!</SubPageHeading>
       <div class="text-center mt-5 pb-5">
-        <HKButton
-          link="about"
-          v-smooth-scroll="{ offset: offset }"
-          :fontSize="1.25"
-          :large="true"
+        <HKButton link="about" :fontSize="1.25" :large="true"
           >Learn more</HKButton
         >
       </div>
@@ -44,8 +26,6 @@
 </template>
 
 <script>
-import { Constants } from "@/constants";
-
 import PageHeading from "@/atoms/PageHeading.vue";
 import SubPageHeading from "@/atoms/SubPageHeading.vue";
 import HKButton from "@/atoms/HKButton.vue";
@@ -57,12 +37,20 @@ export default {
     PageHeading,
     SubPageHeading,
     HKButton
-  },
-
-  computed: {
-    offset: function() {
-      return -Constants.NAVBAR_HEIGHT;
-    }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+#what-is-hk-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(~@/assets/imgs/what_is_hk_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+
+  .container {
+    padding: 2rem 0;
+  }
+}
+</style>
