@@ -1,0 +1,52 @@
+.main-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3rem;
+	width: 100%;
+
+	@include media-breakpoint-up(sm) {
+		width: 75%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: 50%;
+	}
+}
+
+.welcome {
+	// Has to be manually calculated.
+	// First value is height of the window.
+	// Second is height of the navbar.
+	min-height: calc(100vh - #{$headerHeight});
+}
+
+.welcome-second-subheading {
+	@include media-breakpoint-down(sm) {
+		font-size: 2.5rem !important;
+	}
+}
+
+
+.pre-registration-form {
+  padding: 0 1rem;
+
+  @include media-breakpoint-up(lg) {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .pre-registration-email input {
+	height: 100%;
+	min-height: 3.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+  }
+}
+
+#pre-registration-recaptcha > div {
+  width: auto !important;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}

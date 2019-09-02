@@ -1,8 +1,8 @@
 <template>
   <button
     v-if="isButton"
-    @click.prevent="perform"
-    type="button"
+    @click="perform"
+    :type="buttonType"
     :class="buttonClass"
     :style="buttonStyle"
   >
@@ -49,6 +49,11 @@ export default {
       default: "primary"
     },
 
+    submit: {
+      type: Boolean,
+      default: false
+    },
+
     outlined: {
       type: Boolean,
       default: false
@@ -72,14 +77,14 @@ export default {
 
   computed: {
     isButton: function() {
-      return !!this.action;
+      return !!this.action || this.submit;
     },
 
     buttonClass: function() {
       return [
         "btn",
         "btn-hk",
-        `btn-${this.type}`,
+        this.classType,
         this.block ? "btn-block" : "",
         this.large ? "btn-lg" : ""
       ];
@@ -91,14 +96,23 @@ export default {
       };
     },
 
-    btnType: function() {
+    buttonType: function() {
+      return this.submit ? "submit" : "button";
+    },
+
+    classType: function() {
       const outlined = this.outlined ? "outline-" : "";
       return `btn-${outlined}${this.type}`;
     }
   },
 
   methods: {
-    perform() {
+    perform(e) {
+      if (this.submit) {
+        return;
+      }
+
+      e.preventDefault();
       this.action();
     },
 
