@@ -3,7 +3,7 @@
 @import "_theme";
 @import "~bootstrap/scss/bootstrap";
 @import "_navbar";
-@import "_welcome";
+@import "_home";
 @import "_sponsors";
 
 .app-content {
@@ -15,26 +15,22 @@
 	min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
 }
 
-.main-logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 3rem;
-	width: 100%;
-
-	@include media-breakpoint-up(sm) {
-		width: 75%;
-	}
-
-	@include media-breakpoint-up(lg) {
-		width: 50%;
-	}
-}
-
 .btn-hk {
 	&.btn-lg {
 		padding: 1rem 2rem;
 	}
+}
+
+.display-5 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.display-6 {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 1.2;
 }
 
 .footer-content {

@@ -50,7 +50,8 @@ export default {
   color: white;
 
   .container {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 </style>

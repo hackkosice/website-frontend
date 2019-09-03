@@ -1,4 +1,6 @@
 import Vue from "vue";
+import axios from "axios";
+
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -19,6 +21,8 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(vueSmoothScroll);
 
 Vue.config.productionTip = process.env.VUE_APP_DEBUG;
+
+axios.defaults.baseURL = process.env.VUE_APP_API_URL;
 
 new Vue({
   router,
