@@ -3,7 +3,8 @@
     <div class="container">
       <PageHeading :display="5">Sponsors & Partners</PageHeading>
       <SubPageHeading class="mb-4">
-        Hack Kosice wouldn’t be possible without our amazing sponsors and partners
+        Hack Kosice wouldn’t be possible without our amazing sponsors and
+        partners
       </SubPageHeading>
 
       <SponsorsGroup

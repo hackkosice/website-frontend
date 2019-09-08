@@ -1,7 +1,14 @@
 <template>
   <div class="form-group">
     <slot />
-    <input type="email" class="form-control" :value="value" @input="$emit('input', $event.target.value)" :placeholder="placeholder" :required="required">
+    <input
+      type="email"
+      class="form-control"
+      :value="value"
+      @input="$emit('input', $event.target.value)"
+      :placeholder="placeholder"
+      :required="required"
+    />
   </div>
 </template>
 
@@ -23,6 +30,6 @@ export default {
       type: Boolean,
       default: false
     }
-  },
+  }
 };
 </script>
