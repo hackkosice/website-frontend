@@ -1,7 +1,7 @@
 <template>
   <div class="row mb-4">
     <div class="col-12 sponsors-group">
-      <h3 class="text-center">{{ config.title }}</h3>
+      <h3 class="text-center mb-4">{{ config.title }}</h3>
       <div v-for="(row, index) in sponsors" :key="index" class="row">
         <div v-for="(sponsor, index) in row" :key="index" :class="columnClass">
           <SponsorPlaceholder v-if="sponsor.placeholder" :config="config" />

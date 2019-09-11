@@ -2,10 +2,10 @@
   <div>
     <div class="container">
       <PageHeading :display="5">Sponsors & Partners</PageHeading>
-      <SubPageHeading
-        >Hack Kosice wouldn’t be possible without our amazing sponsors and
-        partners</SubPageHeading
-      >
+      <SubPageHeading class="mb-4">
+        Hack Kosice wouldn’t be possible without our amazing sponsors and
+        partners
+      </SubPageHeading>
 
       <SponsorsGroup
         v-for="group in sponsors"
@@ -67,6 +67,18 @@ export default {
           placeholders: false
         },
         {
+          type: "academic",
+          entities: [
+            {
+              name: "Department of computers and informatics",
+              logo: require("@/assets/imgs/sponsors/kpi.png"),
+              url: "https://kpi.fei.tuke.sk/en",
+              style: "wide"
+            }
+          ],
+          placeholders: false
+        },
+        {
           type: "partners",
           entities: [
             {
@@ -106,7 +118,7 @@ export default {
         },
         silver: {
           title: "Silver sponsors",
-          style: "big",
+          style: "medium",
           perRow: 2
         },
         bronze: {
@@ -117,6 +129,11 @@ export default {
         },
         general: {
           title: "General partner",
+          style: "big",
+          perRow: 1
+        },
+        academic: {
+          title: "Academic partner",
           style: "big",
           perRow: 1
         },

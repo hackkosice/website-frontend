@@ -1,11 +1,15 @@
 <template>
   <div class="form-group">
-    <vue-recaptcha :sitekey="reCaptchaKey" @verify="update" @expired="update(null)" />
+    <vue-recaptcha
+      :sitekey="reCaptchaKey"
+      @verify="update"
+      @expired="update(null)"
+    />
   </div>
 </template>
 
 <script>
-import VueRecaptcha from 'vue-recaptcha';
+import VueRecaptcha from "vue-recaptcha";
 
 export default {
   name: "ReCaptcha",
@@ -22,7 +26,7 @@ export default {
 
   methods: {
     update(payload) {
-      this.$emit('input', payload);
+      this.$emit("input", payload);
     }
   }
 };
