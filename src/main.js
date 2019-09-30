@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import vueSmoothScroll from "vue2-smooth-scroll";
 
 import "./assets/scss/styles.scss";
+import "./assets/libs/leaflet/leaflet.css";
 
 library.add(fas, fab, far);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
