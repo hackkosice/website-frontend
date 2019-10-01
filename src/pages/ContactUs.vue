@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-4">
+  <div class="container pb-5">
     <PageHeading :display="4">Contact us</PageHeading>
     <SubPageHeading>Got any questions? Want to become sponsor or mentor? Need help with anything? Just let us know!</SubPageHeading>
 
