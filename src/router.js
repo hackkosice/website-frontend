@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Home from "./pages/Home.vue";
+import Faq from "./pages/Faq.vue";
 import About from "./pages/About.vue";
 import CookiePolicy from "./pages/policy/CookiePolicy.vue";
 import PrivacyPolicy from "./pages/policy/PrivacyPolicy.vue";
@@ -24,6 +25,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/faq",
+      name: "faq",
+      component: Faq
     },
     {
       path: "/about",
