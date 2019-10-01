@@ -7,13 +7,14 @@
       @input="$emit('input', $event.target.value)"
       :placeholder="placeholder"
       :required="required"
-      :rows="rows">{{ value }}</textarea>
+      :rows="rows"
+      :value.prop="value"></textarea>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Email",
+  name: "TextArea",
 
   props: {
     value: {
