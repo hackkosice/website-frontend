@@ -12,6 +12,7 @@ module.exports = {
     parser: "babel-eslint"
   },
   globals: {
-    grecaptcha: false
+    grecaptcha: false,
+    L: false
   }
 };

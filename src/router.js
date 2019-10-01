@@ -4,6 +4,8 @@ import Router from "vue-router";
 import Home from "./pages/Home.vue";
 import About from "./pages/About.vue";
 import ContactUs from "./pages/ContactUs.vue";
+import CookiePolicy from "./pages/policy/CookiePolicy.vue";
+import PrivacyPolicy from "./pages/policy/PrivacyPolicy.vue";
 import NotFound from "./pages/NotFound.vue";
 
 Vue.use(Router);
@@ -33,6 +35,16 @@ export default new Router({
       path: "/contact-us",
       name: "contact-us",
       component: ContactUs
+    },
+    {
+      path: "/policy/cookie",
+      name: "policy.cookie",
+      component: CookiePolicy
+    },
+    {
+      path: "/policy/privacy",
+      name: "policy.privacy",
+      component: PrivacyPolicy
     },
     {
       path: "*",
