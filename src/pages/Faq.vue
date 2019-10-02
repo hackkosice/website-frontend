@@ -2,13 +2,16 @@
   <div class="container pb-5">
     <PageHeading :display="4">Frequently Asked Questions</PageHeading>
     <SubPageHeading>
-      Answers to most of the questions you might be asking about Hack
-      Kosice
+      Answers to most of the questions you might be asking about Hack Kosice
     </SubPageHeading>
 
     <div class="row mt-5">
       <div v-for="(column, index) in questions" :key="index" class="col-sm-6">
-        <span v-for="(question, id) in column" :key="id" class="faq-link-wrapper">
+        <span
+          v-for="(question, id) in column"
+          :key="id"
+          class="faq-link-wrapper"
+        >
           <a
             v-smooth-scroll="{ offset: offset }"
             :href="'#' + id"
@@ -21,7 +24,8 @@
     </div>
 
     <SubPageHeading class="mt-5">
-      Didn't find your answer here? Don't hesitate and <Link link="contact-us" title="contact us" />!
+      Didn't find your answer here? Don't hesitate and
+      <Link link="contact-us" title="contact us" />!
     </SubPageHeading>
 
     <div id="whats-in-it" class="mt-5">
