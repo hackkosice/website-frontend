@@ -1,27 +1,47 @@
 <template>
   <div class="container pb-5">
     <PageHeading :display="4">Contact us</PageHeading>
-    <SubPageHeading>Got any questions? Want to become sponsor or mentor? Need help with anything? Just let us know!</SubPageHeading>
+    <SubPageHeading>
+      Got any questions? Want to become sponsor or mentor? Need help with
+      anything? Just let us know!
+    </SubPageHeading>
 
     <div class="row d-flex h-100">
       <div class="col-sm-6">
         <form @submit="submitForm">
-          <Email label="E-mail" placeholder="Your E-mail Address" :required="true" v-model="email" />
-          <TextArea label="Message" placeholder="Type your message here..." :required="true" v-model="message" />
+          <Email
+            label="E-mail"
+            placeholder="Your E-mail Address"
+            :required="true"
+            v-model="email"
+          />
+          <TextArea
+            label="Message"
+            placeholder="Type your message here..."
+            :required="true"
+            v-model="message"
+          />
           <ReCaptcha v-model="recaptcha" class="text-center recaptcha" />
           <div class="form-group">
-            <HKButton :submit="true" :block="true" :large="true">Send message</HKButton>
+            <HKButton :submit="true" :block="true" :large="true">
+              Send message
+            </HKButton>
           </div>
         </form>
       </div>
       <div class="col-sm-6 d-flex justify-content-center align-items-center">
         <div class="contact-direct text-center font-italic">
           <font-awesome-icon :icon="['far', 'envelope']" />
-          <br>
+          <br />
           <span>
             Or reach out to us via email
-            <br>
-            at <Link link="mailto:contact@hackkosice.com" title="contact@hackkosice.com" :external="true" />
+            <br />
+            at
+            <Link
+              link="mailto:contact@hackkosice.com"
+              title="contact@hackkosice.com"
+              :external="true"
+            />
           </span>
         </div>
       </div>
@@ -55,11 +75,11 @@ export default {
     Link
   },
 
-  data: function () {
+  data: function() {
     return {
       email: null,
       message: null,
-      recaptcha: null,
+      recaptcha: null
     };
   },
 
@@ -68,11 +88,7 @@ export default {
       e.preventDefault();
 
       if (!this.recaptcha) {
-        Swal.fire(
-          "Error!",
-          "Please verify that you are not a robot!",
-          "error"
-        );
+        Swal.fire("Error!", "Please verify that you are not a robot!", "error");
       } else if (this.message.length < 20 || this.message.length > 4000) {
         Swal.fire(
           "Error!",
@@ -104,11 +120,11 @@ export default {
 </script>
 
 <style lang="scss">
-  .recaptcha .google-recaptcha {
-    display: inline-block;
-  }
+.recaptcha .google-recaptcha {
+  display: inline-block;
+}
 
-  .contact-direct {
-    font-size: 2rem;
-  }
+.contact-direct {
+  font-size: 2rem;
+}
 </style>

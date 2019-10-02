@@ -8,7 +8,8 @@
       :placeholder="placeholder"
       :required="required"
       :rows="rows"
-      :value.prop="value"></textarea>
+      :value.prop="value"
+    ></textarea>
   </div>
 </template>
 
