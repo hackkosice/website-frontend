@@ -2,20 +2,19 @@
   <div class="form-group">
     <label v-if="label" class="font-weight-bold">{{ label }}</label>
     <slot />
-    <input
-      type="email"
+    <textarea
       class="form-control"
-      :value="value"
       @input="$emit('input', $event.target.value)"
       :placeholder="placeholder"
       :required="required"
-    />
+      :rows="rows"
+      :value.prop="value"></textarea>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Email",
+  name: "TextArea",
 
   props: {
     value: {
@@ -25,6 +24,11 @@ export default {
     label: {
       type: String,
       default: null
+    },
+
+    rows: {
+      type: Number,
+      default: 5
     },
 
     placeholder: {

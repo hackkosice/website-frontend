@@ -1,10 +1,11 @@
 import axios from "axios";
 
-function submit(email, recaptcha) {
+function submit(email, message, recaptcha) {
   const formData = new FormData();
 
-  formData.set("action", "mailchimp");
+  formData.set("action", "contact-us");
   formData.set("email", email);
+  formData.set("message", message);
   formData.set("g-recaptcha", recaptcha);
 
   return axios.post("/", formData);
