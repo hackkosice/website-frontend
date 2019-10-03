@@ -1,6 +1,7 @@
 <template>
   <div class="form-group">
     <vue-recaptcha
+      class="google-recaptcha"
       :sitekey="reCaptchaKey"
       @verify="update"
       @expired="update(null)"

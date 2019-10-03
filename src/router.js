@@ -2,7 +2,9 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Home from "./pages/Home.vue";
+import Faq from "./pages/Faq.vue";
 import About from "./pages/About.vue";
+import ContactUs from "./pages/ContactUs.vue";
 import CookiePolicy from "./pages/policy/CookiePolicy.vue";
 import PrivacyPolicy from "./pages/policy/PrivacyPolicy.vue";
 import NotFound from "./pages/NotFound.vue";
@@ -26,9 +28,19 @@ export default new Router({
       component: Home
     },
     {
+      path: "/faq",
+      name: "faq",
+      component: Faq
+    },
+    {
       path: "/about",
       name: "about",
       component: About
+    },
+    {
+      path: "/contact-us",
+      name: "contact-us",
+      component: ContactUs
     },
     {
       path: "/policy/cookie",
