@@ -3,8 +3,8 @@
     <WelcomeSection />
     <WhatIsHK />
     <PreRegistration />
-    <SponsorsPartners />
     <Venue />
+    <SponsorsPartners />
   </div>
 </template>
 
