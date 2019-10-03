@@ -98,6 +98,12 @@ export default {
               logo: require("@/assets/imgs/sponsors/mondaydotcom.png"),
               url: "https://www.monday.com/",
               style: "high"
+            },
+            {
+              name: "ZAGX Productions",
+              logo: require("@/assets/imgs/sponsors/zagx.png"),
+              url: "https://www.facebook.com/zagxproductions/",
+              style: "square"
             }
           ],
           placeholders: 1
