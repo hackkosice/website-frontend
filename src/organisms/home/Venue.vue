@@ -14,7 +14,7 @@
         <b>Venue:</b> Kunsthalle/Hala umenia Košice
       </SubPageHeading>
       <MapViewer
-        :position="{ lat: 48.72483, lon: 21.261012 }"
+        :position="getPosition"
         :zoom="17"
         :enablePicker="true"
         :fixed="false"
@@ -22,7 +22,7 @@
           title: 'Kunsthalle Košice',
           description: 'Rumanova 1, 040 01 Košice, Slovakia'
         }"
-        style="height: 500px"
+        class="map-viewer"
       />
     </div>
   </div>
@@ -40,6 +40,12 @@ export default {
     PageHeading,
     SubPageHeading,
     MapViewer
+  },
+
+  computed: {
+    getPosition: function() {
+      return { lat: 48.72483, lon: 21.261012 };
+    }
   }
 };
 </script>
@@ -47,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 #venue-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://media.kosiceregion.com/assets/50196/large_hala_umenia_4.jpg");
+    url(~@/assets/imgs/venue_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -66,6 +72,10 @@ export default {
       height: 2rem;
       margin: 0 0.5rem 0.5rem 0;
     }
+  }
+
+  .map-viewer {
+    height: 500px;
   }
 }
 </style>

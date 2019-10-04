@@ -46,9 +46,7 @@
       />.
     </TextParagraph>
 
-    <TextHeading class="mt-5"
-      >Accessing, changing and removing your information</TextHeading
-    >
+    <TextHeading class="mt-5">Accessing, changing and removing your information</TextHeading>
     <TextParagraph>
       It is your legal right to view all information collected about you by us.
       To access, change or delete information about you, please contact us
