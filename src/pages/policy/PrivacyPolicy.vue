@@ -113,6 +113,7 @@
         title="MLH Code of Conduct"
         link="https://static.mlh.io/docs/mlh-member-event-guidelines.pdf"
         :external="true"
+        target="_blank"
       />. This extends to all attendees, including hackers, volunteers,
       organizers, sponsors, partners, judges, mentors, and MLH staff.
     </TextParagraph>
@@ -138,10 +139,12 @@
       Analytics opt-out browser add-on (<Link
         link="https://tools.google.com/dlpage/gaoptout"
         :external="true"
+        target="_blank"
       />) for your web browser. For more information visit
       <Link
         link="www.google.com/policies/privacy/partners/"
         :external="true"
+        target="_blank"
       />.
     </TextParagraph>
 
