@@ -3,12 +3,10 @@
     <div class="container">
       <PageHeading :display="5">Location</PageHeading>
       <div class="location">
-        <SubPageHeading
-          ><img
+        <SubPageHeading><img
             alt="🇸🇰"
             src="https://s.w.org/images/core/emoji/11/svg/1f1f8-1f1f0.svg"
-          /><b>Kosice, Slovakia</b></SubPageHeading
-        >
+          /><b>Kosice, Slovakia</b></SubPageHeading>
       </div>
       <SubPageHeading>
         <b>Venue:</b> Kunsthalle/Hala umenia Košice
