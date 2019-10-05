@@ -5,21 +5,19 @@
       <div class="location">
         <SubPageHeading><img
             alt="🇸🇰"
-            src="https://s.w.org/images/core/emoji/11/svg/1f1f8-1f1f0.svg"
-          /><b>Kosice, Slovakia</b></SubPageHeading>
+            src="@/assets/imgs/flag.svg"
+          /><b>Kosice, Slovakia</b>
+        </SubPageHeading>
       </div>
       <SubPageHeading>
         <b>Venue:</b> Kunsthalle/Hala umenia Košice
       </SubPageHeading>
       <MapViewer
-        :position="getPosition"
+        :position="position"
         :zoom="17"
         :enablePicker="true"
         :fixed="false"
-        :tooltip="{
-          title: 'Kunsthalle Košice',
-          description: 'Rumanova 1, 040 01 Košice, Slovakia'
-        }"
+        :tooltip="tooltip"
         class="map-viewer"
       />
     </div>
@@ -41,8 +39,14 @@ export default {
   },
 
   computed: {
-    getPosition: function() {
+    position: function() {
       return { lat: 48.72483, lon: 21.261012 };
+    },
+    tooltip: function() {
+      return {
+        title: 'Kunsthalle Košice',
+        description: 'Rumanova 1, 040 01 Košice, Slovakia'
+      }
     }
   }
 };
