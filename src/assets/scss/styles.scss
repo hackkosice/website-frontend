@@ -37,7 +37,7 @@
 	padding: 2rem;
 }
 
-.container > h1 {
+.page-heading {
 	@include media-breakpoint-down(md) {
 		margin-top: 5rem;
 	}
