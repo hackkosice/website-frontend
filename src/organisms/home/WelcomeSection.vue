@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div class="welcome bg-secondary">
     <div class="container">
       <MainLogo />
       <PageHeading :display="5">March 28th - 29th, 2020</PageHeading>
