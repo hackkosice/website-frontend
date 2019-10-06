@@ -25,37 +25,58 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Home'
+      }
     },
     {
       path: "/faq",
       name: "faq",
-      component: Faq
+      component: Faq,
+      meta: {
+        title: 'FAQ'
+      }
     },
     {
       path: "/about",
       name: "about",
-      component: About
+      component: About,
+      meta: {
+        title: 'About'
+      }
     },
     {
       path: "/contact-us",
       name: "contact-us",
-      component: ContactUs
+      component: ContactUs,
+      meta: {
+        title: 'Contact Us'
+      }
     },
     {
       path: "/policy/cookie",
       name: "policy.cookie",
-      component: CookiePolicy
+      component: CookiePolicy,
+      meta: {
+        title: 'Cookie Policy'
+      }
     },
     {
       path: "/policy/privacy",
       name: "policy.privacy",
-      component: PrivacyPolicy
+      component: PrivacyPolicy,
+      meta: {
+        title: 'Privacy Policy'
+      }
     },
     {
       path: "*",
       name: "404",
-      component: NotFound
+      component: NotFound,
+      meta: {
+        title: '404 - Not found'
+      }
     }
   ]
 });

@@ -24,6 +24,15 @@ export default {
     NavBar,
     SiteFooter,
     MlhBadge
-  }
+  },
+
+  watch: {
+    '$route': {
+      handler: (to, from) => {
+        document.title = to.meta.title ? `${to.meta.title} | Hack Kosice` : 'Hack Kosice';
+      },
+      immediate: true
+    },
+  },
 };
 </script>
