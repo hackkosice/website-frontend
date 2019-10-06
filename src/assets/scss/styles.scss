@@ -36,3 +36,9 @@
 .footer-content {
 	padding: 2rem;
 }
+
+.container > h1 {
+	@include media-breakpoint-down(md) {
+		margin-top: 5rem;
+	}
+}
