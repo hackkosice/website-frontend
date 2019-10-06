@@ -19,6 +19,9 @@
 	// First value is height of the window.
 	// Second is height of the navbar.
 	min-height: calc(100vh - #{$headerHeight});
+	background-image: linear-gradient(rgba(94, 33, 55, 0.9)), url(~@/assets/imgs/welcome_background.svg);
+	background-size: cover;
+	background-position: center;
 }
 
 .welcome-second-subheading {

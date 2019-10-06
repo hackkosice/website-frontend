@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome bg-secondary">
+  <div class="welcome bg-secondary d-flex flex-column justify-content-center align-items-center">
     <div class="container">
       <MainLogo />
       <PageHeading :display="5">March 28th - 29th, 2020</PageHeading>
