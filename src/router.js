@@ -73,7 +73,10 @@ export default new Router({
     {
       path: "*",
       name: "404",
-      component: NotFound
+      component: NotFound,
+      meta: {
+        title: '404 - Not found'
+      }
     }
   ]
 });
