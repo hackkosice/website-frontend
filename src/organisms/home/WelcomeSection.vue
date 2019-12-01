@@ -8,20 +8,20 @@
       </PageHeading>
       <div class="text-center mt-5 pb-5">
         <HKButton
-          link="#section-pre-registration"
-          v-smooth-scroll="{ offset: offset }"
+          link="https://apply.hackkosice.com/user/signup/"
+          :external="true"
+          target="_blank"
           :fontSize="1.25"
           :large="true"
-          >Pre-registration</HKButton
-        >
+          >
+          Apply now
+        </HKButton>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { Constants } from "@/constants";
-
 import MainLogo from "@/atoms/MainLogo.vue";
 import PageHeading from "@/atoms/PageHeading.vue";
 import HKButton from "@/atoms/HKButton.vue";
@@ -33,12 +33,6 @@ export default {
     MainLogo,
     PageHeading,
     HKButton
-  },
-
-  computed: {
-    offset: function() {
-      return -Constants.NAVBAR_HEIGHT;
-    }
   }
 };
 </script>
