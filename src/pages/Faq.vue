@@ -34,7 +34,7 @@
         As a participant, you get the following:
         <ul>
           <li>
-            A weekend of innovation and fun with 150 smartest technologists
+            A weekend of innovation and fun with <strong>250 smartest peers</strong>
           </li>
           <li>
             Interaction with top tech companies in the region
@@ -106,16 +106,16 @@
     <div id="applications" class="mt-5">
       <TextHeading>Do I need to apply?</TextHeading>
       <TextParagraph>
-        Yes. If you subscribe to updates, we can let you know as soon as
-        applications open. Stay tuned!
+        Yes. Applications will be considered on an individual basis
+        (or within your team if you register as a team).
       </TextParagraph>
     </div>
 
     <div id="why-cv" class="mt-5">
       <TextHeading>Why do I need to provide a CV?</TextHeading>
       <TextParagraph>
-        Selected sponsors will have access to your CV. This is so that you can
-        get on their radar and they can get your contact details for recruitment
+        Sponsors will have access to your CV. This is so that you can get on
+        their radar and they can get your contact details for recruitment
         purposes. It’s a win-win!
       </TextParagraph>
     </div>
