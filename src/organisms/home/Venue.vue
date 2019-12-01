@@ -3,10 +3,8 @@
     <div class="container">
       <PageHeading :display="5">Location</PageHeading>
       <div class="location">
-        <SubPageHeading><img
-            alt="🇸🇰"
-            src="@/assets/imgs/flag.svg"
-          /><b>Kosice, Slovakia</b>
+        <SubPageHeading
+          ><img alt="🇸🇰" src="@/assets/imgs/flag.svg" /><b>Kosice, Slovakia</b>
         </SubPageHeading>
       </div>
       <SubPageHeading>
@@ -44,9 +42,9 @@ export default {
     },
     tooltip: function() {
       return {
-        title: 'Kunsthalle Košice',
-        description: 'Rumanova 1, 040 01 Košice, Slovakia'
-      }
+        title: "Kunsthalle Košice",
+        description: "Rumanova 1, 040 01 Košice, Slovakia"
+      };
     }
   }
 };

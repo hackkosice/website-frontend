@@ -5,9 +5,9 @@
         Subscribe to our newsletter
       </PageHeading>
       <SubPageHeading class="text-white">
-        Do you want to stay in touch and be among the first to learn news
-        and useful information about Hack Kosice 2020? Just enter your e-mail
-        below, and we'll take care of the rest:
+        Do you want to stay in touch and be among the first to learn news and
+        useful information about Hack Kosice 2020? Just enter your e-mail below,
+        and we'll take care of the rest:
       </SubPageHeading>
       <form class="subscription-form row" @submit="submitForm">
         <Email
