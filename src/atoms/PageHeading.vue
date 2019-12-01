@@ -1,5 +1,8 @@
 <template>
-  <h1 :class="headingClass" class="text-center font-weight-bold p-4 page-heading">
+  <h1
+    :class="headingClass"
+    class="text-center font-weight-bold p-4 page-heading"
+  >
     <slot />
   </h1>
 </template>

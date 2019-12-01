@@ -27,12 +27,14 @@ export default {
   },
 
   watch: {
-    '$route': {
-      handler: (to, from) => {
-        document.title = to.meta.title ? `${to.meta.title} | Hack Kosice` : 'Hack Kosice';
+    $route: {
+      handler: to => {
+        document.title = to.meta.title
+          ? `${to.meta.title} | Hack Kosice`
+          : "Hack Kosice";
       },
       immediate: true
-    },
-  },
+    }
+  }
 };
 </script>

@@ -27,7 +27,7 @@ export default new Router({
       name: "home",
       component: Home,
       meta: {
-        title: 'Home'
+        title: "Home"
       }
     },
     {
@@ -35,7 +35,7 @@ export default new Router({
       name: "faq",
       component: Faq,
       meta: {
-        title: 'FAQ'
+        title: "FAQ"
       }
     },
     {
@@ -43,7 +43,7 @@ export default new Router({
       name: "about",
       component: About,
       meta: {
-        title: 'About'
+        title: "About"
       }
     },
     {
@@ -51,7 +51,7 @@ export default new Router({
       name: "contact-us",
       component: ContactUs,
       meta: {
-        title: 'Contact Us'
+        title: "Contact Us"
       }
     },
     {
@@ -59,7 +59,7 @@ export default new Router({
       name: "policy.cookie",
       component: CookiePolicy,
       meta: {
-        title: 'Cookie Policy'
+        title: "Cookie Policy"
       }
     },
     {
@@ -67,7 +67,7 @@ export default new Router({
       name: "policy.privacy",
       component: PrivacyPolicy,
       meta: {
-        title: 'Privacy Policy'
+        title: "Privacy Policy"
       }
     },
     {
@@ -75,7 +75,7 @@ export default new Router({
       name: "404",
       component: NotFound,
       meta: {
-        title: '404 - Not found'
+        title: "404 - Not found"
       }
     }
   ]
