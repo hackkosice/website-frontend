@@ -2,7 +2,7 @@
   <div class="home">
     <WelcomeSection />
     <WhatIsHK />
-    <PreRegistration />
+    <NewsSubscription />
     <SponsorsPartners />
     <Venue />
   </div>
@@ -11,7 +11,7 @@
 <script>
 import WelcomeSection from "@/organisms/home/WelcomeSection.vue";
 import WhatIsHK from "@/organisms/home/WhatIsHK.vue";
-import PreRegistration from "@/organisms/home/PreRegistration.vue";
+import NewsSubscription from "@/organisms/home/NewsSubscription.vue";
 import SponsorsPartners from "@/organisms/home/SponsorsPartners.vue";
 import Venue from "@/organisms/home/Venue.vue";
 
@@ -20,7 +20,7 @@ export default {
   components: {
     WelcomeSection,
     WhatIsHK,
-    PreRegistration,
+    NewsSubscription,
     SponsorsPartners,
     Venue
   }

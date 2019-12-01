@@ -1,24 +1,24 @@
 <template>
-  <div id="section-pre-registration" class="bg-primary shadow">
+  <div id="section-subscription" class="bg-primary shadow">
     <div class="container">
       <PageHeading color="white" :display="6">
-        Pre-registration for Hack Kosice 2020
+        Subscribe to our newsletter
       </PageHeading>
       <SubPageHeading class="text-white">
-        Are you as excited as we are? Pre-registration for Hack Kosice 2020 has
-        already begun! If you are in for this ride, just enter your e-mail
-        below, and we’ll take care of the rest:
+        Do you want to stay in touch and be among the first to learn news
+        and useful information about Hack Kosice 2020? Just enter your e-mail
+        below, and we'll take care of the rest:
       </SubPageHeading>
-      <form class="pre-registration-form row" @submit="submitForm">
+      <form class="subscription-form row" @submit="submitForm">
         <Email
-          class="pre-registration-email col-md-8"
+          class="subscription-email col-md-8"
           placeholder="Your E-mail Address"
           :required="true"
           v-model="email"
         />
         <div class="form-group col-md-4">
           <HKButton type="secondary" :submit="true" :block="true" :large="true">
-            Pre-register
+            Subscribe
           </HKButton>
         </div>
       </form>
@@ -32,12 +32,12 @@ import SubPageHeading from "@/atoms/SubPageHeading.vue";
 import Email from "@/atoms/form/Email.vue";
 import HKButton from "@/atoms/HKButton.vue";
 
-import PreRegistrationService from "@/scripts/api/PreRegistrationService";
+import SubscriptionService from "@/scripts/api/SubscriptionService";
 
 import Swal from "sweetalert2";
 
 export default {
-  name: "PreRegistration",
+  name: "NewsSubscription",
 
   components: {
     PageHeading,
@@ -58,10 +58,10 @@ export default {
 
       Swal.fire({
         title: "Verify that you are not a robot",
-        html: '<div id="pre-registration-recaptcha"></div>',
+        html: '<div id="subscription-recaptcha"></div>',
         showCancelButton: true,
         onOpen: () => {
-          grecaptcha.render("pre-registration-recaptcha", {
+          grecaptcha.render("subscription-recaptcha", {
             sitekey: process.env.VUE_APP_RECAPTCHA
           });
         },
@@ -79,11 +79,11 @@ export default {
     },
 
     registerSubscriber(recaptcha) {
-      return PreRegistrationService.submit(this.email, recaptcha)
+      return SubscriptionService.submit(this.email, recaptcha)
         .then(() => {
           Swal.fire(
             "Success!",
-            "You have been successfully pre-registered for Hack Kosice 2020!",
+            "You have been successfully subscribed to our newsletter!",
             "success"
           );
           this.email = null;
@@ -91,7 +91,7 @@ export default {
         .catch(() => {
           Swal.fire(
             "Error!",
-            "Sorry, we could not pre-register your e-mail address. Please try it again later.",
+            "Sorry, we could not subscribe your e-mail address. Please try it again later.",
             "error"
           );
         });
